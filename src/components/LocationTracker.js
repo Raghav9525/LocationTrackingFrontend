@@ -108,8 +108,8 @@ const LocationTracker = () => {
 
     // Create a custom icon
     const customIcon = L.icon({
-        iconUrl: require("./img/placeholder.png"),
-        iconSize: [38, 38], // Size of the icon
+        iconUrl: require("./img/locationPoiner.webp"),
+        iconSize: [60, 75], // Size of the icon
     });
 
 
@@ -126,7 +126,7 @@ const LocationTracker = () => {
                         icon={customIcon}
                         ref={markerRef}
                     >
-                        <Popup>Hello, I am a popup.</Popup>
+                        <Popup>{address}</Popup>
                     </Marker>
                 </MapContainer>
             )}

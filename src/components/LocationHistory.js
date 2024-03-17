@@ -36,8 +36,9 @@ function LocationHistory() {
         if (response.ok) {
           const data = await response.json();
           setLocationHistory(data);
-          console.log("Location history fetched successfully:", data);
           setDisplayTable(true)
+          console.log("Location history fetched successfully:")
+          console.log(data);
         } else {
           console.log("Failed to fetch location history");
         }
