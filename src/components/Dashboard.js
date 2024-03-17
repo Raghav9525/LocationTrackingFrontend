@@ -8,6 +8,7 @@ import Login from './Login'
 import { Navigate } from 'react-router-dom';
 import LocationHistory from './LocationHistory';
 import About from './About'
+import LocationDelete from './LocationDelete';
 
 const PrivateRoute = ({ children }) => {
   const token = localStorage.getItem('token');
@@ -36,6 +37,7 @@ function Dashboard() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/about" element={<About />} />
+        <Route path="/location_delete" element={<LocationDelete />} />
 
       </Routes>
 

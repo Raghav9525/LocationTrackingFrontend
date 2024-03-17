@@ -34,6 +34,10 @@ function Navbar() {
                             <li className="nav-item">
                                 <Link id="nav-link1" className="nav-link" to="/about" onClick={closeMenu}>About</Link>
                             </li>
+
+                            <li className="nav-item">
+                                <Link id="nav-link1" className="nav-link" to="/location_delete" onClick={closeMenu}>DeleteLocation</Link>
+                            </li>
                         
                         </ul>
                     </div>

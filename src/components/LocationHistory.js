@@ -58,10 +58,11 @@ function LocationHistory() {
   };
   return (
 
-      <div className='vh-100' style={{ backgroundColor: "rgb(239, 244, 249)" }}>
-        <h2 className='pt-2 ms-2'>My Location History</h2>
-        <div className='col-sm-3'></div>
-
+    <div className='vh-100' style={{ backgroundColor: "rgb(239, 244, 249)",overflow: "auto"  }}>
+      <h2 className='pt-2 ms-2'>My Location History</h2>
+      <div className='col-sm-3'></div>
+      
+      <div style={{ }}>
         {displayTable ? (
           <div className='col-sm-6 mt-4   mx-auto text-center'>
             <table className='table table-striped ms-2 me-2' style={tableStyle}>
@@ -86,9 +87,10 @@ function LocationHistory() {
         ) : (
           <p>No Records Found</p>
         )}
-        <div className='col-sm-3'></div>
-
       </div>
+      <div className='col-sm-3'></div>
+
+    </div>
   )
 }
 
